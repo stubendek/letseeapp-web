@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+		================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LetSee - A computer vision based smartphone application for visually impaired people</title>
+    <meta name="description" content="A computer vision based smartphone application for visually impaired people">
+    <meta name="keywords" content="computer vision, smartphone application, app, visually impaired, blind, aid">
+    <meta name="author" content="ThemeForces.com, Hungarian Bionic Vision Center">
+    <!-- Favicons
+	================================================== -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="img/icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="img/icons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="LetSee - A computer vision based smartphone application for visually impaired people" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="img/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="img/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="img/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="img/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="img/icons/mstile-310x310.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.6.1/css/font-awesome.css">
+    <!-- Slider
+		================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+    <!-- Stylesheet
+		================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <!-- Navigation
+		==========================================-->
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#tf-home" class="page-scroll"><img src="img/LetSee-logo_white_blue.png" alt="Home" class="navbar-brand"></a>
+                <!-- <a class="navbar-brand" href="index.html">LetSee</a> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#tf-home" class="page-scroll"><span class="lang-en">Home</span></a></li>
+                    <li><a href="#tf-about" class="page-scroll">About</a></li>
+                    <li><a href="#tf-explore" class="page-scroll">Explore</a></li>
+                    <li><a href="#tf-team" class="page-scroll">Team</a></li>
+                    <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
+                    <li><a href="#tf-partners" class="page-scroll">Partners</a></li>
+                    <!--<li><a href="#tf-testimonials" class="page-scroll">Testimonials</a></li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Home Page
+		==========================================-->
+    <div id="tf-home" class="text-center" aria-label="home" role="region">
+        <div class="overlay">
+            <div class="content">
+                <!--<h1>Welcome to <strong><span class="color">LetSee</span></strong></h1>-->
+                <h2>Welcome to <img src="img/LetSee-logo_white_blue.png" style="width: 200px; margin-top: -8px;" alt="LetSee"></h2>
+                <p class="lead">A <strong>computer vision</strong> based <strong>smartphone application</strong> for <strong>visually impaired</strong> people</p>
+                <a aria-hidden="true" href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Page
+		==========================================-->
+    <div id="tf-about" aria-label="about us" role="region">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/LetSeeApp_StartScreen-sm-1.jpg" class="img-responsive" alt="LetSee app start screen">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h2>LetSee: an App for Vision</h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro justified">Our aim is to develop an application to help visually impaired people. LetSee is an easy-to-use app to facilitate their lives, and help them to solve common recognition challenges. LetSee enables blind users to gain visual information by providing audio feedback. The current prototype recognizes banknotes, and it will be an even more useful toolbox for the blind in the future.</p>
+                        <p class="intro justified">LetSee will provide endless possibilities to their users. Soon it will able to identify colors, recognize pictograph, read small displays on household appliances, recognize numbers of public transport vehicles, locate crosswalk, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Explore Section
+		==========================================-->
+    <div id="tf-explore" class="text-center" aria-labelledby="explore_label" role="region">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title center">
+                    <h2 id="explore_label">Explore <strong>the app</strong></h2>
+                    <div class="line" aria-hidden="true">
+                        <hr>
+                    </div>
+                    <div class="clearfix" aria-hidden="true"></div>
+                    <div class="center-block visible-sm visible-md visible-lg">
+                        <img src="img/DataFlow01W.png" class="img-rounded" align="middle" style="width: 80%; max-width: 600px;" alt="A flowchart of how the recognition process is being done">
+                    </div>
+                    <div class="center-block visible-xs">
+                        <img src="img/DataFlow02W.png" class="img-rounded" align="middle" style="width: 60%; max-width: 200px;" alt="A flowchart of how the recognition process is being done">
+                    </div>
+                    <!-- There should be two types for PC and mobile versions. Or not? -->
+                    <!--is equipped only with banknote recognition capabilities-->
+                    <!--<p class="intro">LetSee app uses the built in camera of your smartphone to capture imageflows of your surroundings. Images are processed locally in real time, thus no internet connection is needed to use the app.* Since current version of LetSee recognizes banknotes only, task selection menu will be introduced in a later release. Just tap on the app to start processing and wait for the audio feedback. Once the app is highly confident in its decisions, results are immediately displayed on the screen and spoken out loud. </p>
+					<p class="intro">To help you aim the device properly, LetSee also gives you audio hints about where to move the camera.</p>
+					-->
+                    <p class="intro">LetSee is exploiting the immense computational and sensory capabilities of smartphones.</p>
+                </div>
+                <div class="space" aria-hidden="true"></div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 service">
+                        <i class="fa fa-video-camera" aria-hidden="true"></i>
+                        <h4><strong>Image Acquisition</strong></h4>
+                        <p class="justified">LetSee uses the built in camera of your smartphone to look around in your surroundings processing each frame continuously. </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        <h4><strong>Effective Processing</strong></h4>
+                        <p class="justified">Fast and low-power algorithms running locally on your phone, thus no internet connection is needed to use the app.*</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service">
+                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                        <h4><strong>Audio Feedback</strong></h4>
+                        <p class="justified">Once the app is highly confident in its decisions, results are immediately displayed on the screen and spoken out loud.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service futureTask">
+                        <i class="fa fa-th-list" aria-hidden="true"></i>
+                        <h4><strong>Task Selection</strong></h4>
+                        <p class="justified">Since current version of LetSee recognizes banknotes only, accessible task selection menu will be introduced in a later release. </p>
+                    </div>
+                </div>
+                <p class="introItalic">*But of course one can not download the app out of thin air ;)</p>
+            </div>
+        </div>
+    </div>
+    <!-- Download Section
+		==========================================-->
+    <div id="tf-download" class="text-center" aria-labelledby="download_label" role="region">
+        <div class="container">
+            <div class="section-title center">
+                <h2 id="download_label">Download <strong>LetSee</strong></h2>
+                <div class="line" aria-hidden="true">
+                    <hr>
+                </div>
+                <div class="clearfix" aria-hidden="true"></div>
+                <div class="clearfix" aria-hidden="true"></div>
+                <img src="img/LetSeeAppInUse01.jpg" class="img-rounded" align="middle" style="width: 80%; max-width: 400px;" alt="LetSee app in use">
+            </div>
+            <p class="intro">We are really excited to show you how it works! Download LetSee! :)</p>
+            <div class="section-title center">
+                <a href="https://itunes.apple.com/hu/app/letseeapp/id1170643143?mt=8">
+                    <!--<img src="img/iosSoon.png" class="img-rounded" align="middle" style="width: 80%; max-width: 200px;">-->
+                    <img src="img/AppStoreDownload.png" class="img-rounded" align="middle" style="width: 80%; max-width: 200px;" alt="App store download">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Team Page
+		==========================================-->
+    <div id="tf-team" class="text-center" aria-labelledby="team_label" role="region">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title center">
+                    <h2 id="team_label">Meet <strong>our team</strong></h2>
+                    <div class="line" aria-hidden="true">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-5">
+                        <div class="thumbnail">
+                            <img src="img/team/cse1.jpg" alt="Csanad Egervari" class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Csanad Egervari</h3>
+                                <p>Executive Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-5">
+                        <div class="thumbnail">
+                            <img src="img/team/mr1.jpg" alt="Mihaly Radvanyi" class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Mihaly Radvanyi</h3>
+                                <p>Algorithm Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-5">
+                        <div class="thumbnail">
+                            <img src="img/team/as1.jpg" alt="Attila Stubendek" class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Attila Stubendek</h3>
+                                <p>Algorithm Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-5">
+                        <div class="thumbnail">
+                            <img src="img/team/gq1.png" alt="Gabor Quintz" class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Gabor Quintz</h3>
+                                <p>iOS Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-5">
+                        <div class="thumbnail">
+                            <img src="img/team/kk1.jpg" alt="Kristof Karacs" class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Kristof Karacs</h3>
+                                <p>Head of Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section
+		==========================================-->
+    <div id="tf-contact" class="text-center" aria-labelledby="contact_label" role="region">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title center">
+                        <h2 id="contact_label"><strong>Contact</strong> / <strong>subscribe</strong></h2>
+                        <div class="line" aria-hidden="true">
+                            <hr>
+                        </div>
+                        <div class="clearfix"></div>
+                        <em>Contact us! - in case you have any questions or comments</em>
+                        <br>
+                        <em>Subscribe! - if you would like to get notification when the app is ready to fly</em>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="InputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="InputEmail1" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="InputName1">Your name</label>
+                                    <input type="text" class="form-control" id="InputName1" placeholder="Enter name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2">
+                                <div class="form-group">
+                                    <input type="checkbox" id="cf-send-message" name="cf-send-message" class="css-checkbox" checked>
+                                    <label for="cf-send-message" class="css-label">Send message</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2">
+                                <div class="form-group">
+                                    <input type="checkbox" id="cf-subscribe" name="cf-subscribe" class="css-checkbox" checked>
+                                    <label for="cf-subscribe" class="css-label">Subscribe</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" id="cf-message-fg">
+                            <label for="InputMessage">Message</label>
+                            <textarea class="form-control" id="InputMessage" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn tf-btn btn-default" id="contacform-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Partners Section
+		==========================================-->
+    <div id="tf-partners" class="text-center" aria-labelledby="partners_label" role="region">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title center">
+                    <h2 id="partners_label">Our partners</h2>
+                    <div class="line" aria-hidden="true">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row partnerimages">
+                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                        <img src="img/partners/nd_mark_blue_m.png" alt="University of Notredame">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <img src="img/partners/ppkeitk.png" alt="Faculty of Information Technology and Bionics | Pázmány Péter Catholic University">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <img src="img/partners/infoalap_logo2016HUN_ENG.png" alt="IT Foundation for the Visually Impaired">
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-6 col-xs-12">
+                        <img src="img/partners/sote-cimer.png" alt="Semmelweis University">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav id="footer" aria-label="footer" role="region">
+        <div class="container">
+            <div class="pull-left fnav">
+                <p>ALL RIGHTS RESERVED. COPYRIGHT © 2016. Original template was designed by <a href="https://dribbble.com/shots/1817781--FREEBIE-Spirit8-Digital-agency-one-page-template">Robert Berki</a> and coded by <a href="https://dribbble.com/jennpereira">Jenn Pereira</a></p>
+            </div>
+            <!-- <div class="pull-right fnav">
+								<ul class="footer-social">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								</ul>
+						</div> -->
+        </div>
+    </nav>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+    $('#cf-send-message').change(function() {
+        if ($('input[name="cf-send-message"]:checked').val()) {
+            $('#cf-message-fg').show("slow");
+        } else {
+            $('#cf-message-fg').hide("slow");
+        }
+    });
+
+    $('#contacform-submit').click(function() {
+        if ($('input[name="cf-subscribe"]:checked').val() && $('input[name="cf-send-message"]:checked').val()) {
+            if ($('#InputMessage').val() == "" || $('#InputEmail1').val() == "") {
+                if ($('#InputMessage').val() == "") {
+                    alert('The message field is empty!');
+                } else {
+                    alert('Please, provide your e-mail address!');
+                }
+            } else {
+                alert('Your message has been sent. Thank you for your time!');
+                $.post("contact-send.php", {
+                    InputMessage: $('#InputMessage').val() + " , subscription asked.",
+                    InputName1: $('#InputName1').val(),
+                    InputEmail1: $('#InputEmail1').val()
+                });
+                $('#InputMessage').val("");
+                $('#InputName1').val("");
+                $('#InputEmail1').val("");
+            }
+        } else {
+            if ($('input[name="cf-subscribe"]:checked').val()) {
+                if ($('#InputEmail1').val() == "") {
+                    alert('Please provide your e-mail address!');
+                } else {
+                    alert('Subscription successful. Thank you for your time!');
+                    $.post("contact-send.php", {
+                        InputMessage: "Subscription asked.",
+                        InputName1: $('#InputName1').val(),
+                        InputEmail1: $('#InputEmail1').val()
+                    });
+                    $('#InputMessage').val("");
+                    $('#InputName1').val("");
+                    $('#InputEmail1').val("");
+                }
+            } else if ($('input[name="cf-send-message"]:checked').val()) {
+                if ($('#InputMessage').val() == "") {
+                    alert('Empty message!');
+                } else {
+                    alert('Your message has been sent. Thank you for your time!');
+                    $.post("contact-send.php", {
+                        InputMessage: $('#InputMessage').val(),
+                        InputName1: $('#InputName1').val(),
+                        InputEmail1: $('#InputEmail1').val()
+                    });
+                    $('#InputMessage').val("");
+                    $('#InputName1').val("");
+                    $('#InputEmail1').val("");
+                }
+            }
+        }
+    });
+    </script>
+    <!-- Javascripts
+		================================================== -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
